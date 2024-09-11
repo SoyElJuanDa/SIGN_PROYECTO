@@ -1,0 +1,52 @@
+body{
+    background-color:lightskyblue ;
+}
+
+
+.centro{
+    text-align: center;
+    margin: auto;
+}
+/* efectos del mensaje de bienvenida*/
+.bienvenida{
+    opacity: 0;
+    border:1px solid black;
+    animation: fadeOut 5s;
+    background-color: green;
+    
+}
+
+.enviar{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+@keyframes fadeOut{
+    0%{ opacity: 1}
+    50%{opacity: 0.8}
+    80%{ opacity: 0.5}
+    100%{ opacity: 0;}
+}
+.dropbtn{
+    background-color: green;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+.dropdown-content{
+    display: none;
+}
+.show {
+    display: block;
+}
+.dropdown-content a {
+    color: black;
+    padding: 1px 4px 4px;
+    text-decoration: none;
+    
+  }
+.dropdown-content a:hover{
+    color: white;
+    background-color: green;
+    
+}

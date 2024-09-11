@@ -1,0 +1,92 @@
+/*admin estilos*/
+body{
+    background-color: lightblue;
+}
+
+.centro{
+    text-align: center;
+}
+.titulo{
+    background-color: lightskyblue;
+    
+}
+
+.contenedor{
+    background-color: white;
+}
+/*efectos de mensaje de bienvenida desapareciendo*/
+.bienvenida{
+    opacity: 0;
+    border:1px solid black;
+    animation: fadeOut 5s;
+    background-color: green;
+    position:absolute;
+    width: 80%;
+    top:5px;
+    left: 10%;
+    text-align: center;
+
+}
+
+
+@keyframes fadeOut{
+    0%{ opacity: 1}
+    50%{opacity: 0.8}
+    80%{ opacity: 0.5}
+    100%{ opacity: 0;}
+}
+
+
+.editar{
+    position: absolute;
+    top: 25%;
+    
+}
+@media screen and (min-device-width:320px) and (max-device-width:720px){
+    .secondario{
+        z-index: 1;
+        pointer-events: none;
+    }
+    .editar{
+        z-index: 2;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+@media screen and (min-device-width:721px) and (max-device-width:1024px){
+    .secondario{
+        pointer-events: none;
+        z-index: 1;
+    }
+    .editar{
+        z-index: 2;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+@media screen and (min-device-width:1025px) and (max-device-width:1440px){
+    
+    .editar{
+        top: 50%;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+    }
+    .secondario{
+        z-index: 1;
+        pointer-events: none;
+    }
+}
+@media screen and  (max-device-width:575px){
+    
+    .btn_act{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}
